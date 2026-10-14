@@ -9,7 +9,7 @@
       "topic": "Message",
       "payload": "{\n  \"Message\": \"Hello MQTT via Carteiro!\"\n}"
     },
-    "url": "wss://test.mosquitto.org:8082",
+    "url": "wss://test.mosquitto.org:8081",
     "queryParams": [],
     "headerParams": [],
     "auth": {
