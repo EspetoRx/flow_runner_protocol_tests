@@ -39,3 +39,5 @@ This workspace is managed by [Carteiro](https://github.com/EspetoRx/carteiro), a
 | `CARTEIRO-README.md` | This file; generated and kept up to date by Carteiro. |
 
 Environment files (`.cenv`) may contain secrets and are ignored by Git by default. Review them before explicitly adding them to a commit.
+
+Teste
