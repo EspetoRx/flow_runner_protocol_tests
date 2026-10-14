@@ -1,0 +1,20 @@
+{
+  "version": "1.0",
+  "savedAt": "2026-10-14T01:53:53.933Z",
+  "name": "Echo WebSocket Service (Demonstração)",
+  "request": {
+    "name": "Echo WebSocket Service (Demonstração)",
+    "method": "GET",
+    "protocol": "websocket",
+    "url": "wss://echo.websocket.events",
+    "queryParams": [],
+    "headerParams": [],
+    "auth": {
+      "type": "none"
+    },
+    "body": "",
+    "preRequestScript": "",
+    "testScript": "",
+    "postRequestScript": ""
+  }
+}

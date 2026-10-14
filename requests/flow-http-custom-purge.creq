@@ -1,0 +1,27 @@
+{
+  "version": "1.0",
+  "savedAt": "2026-10-14T01:53:53.933Z",
+  "name": "PURGE - Custom HTTP method",
+  "request": {
+    "name": "PURGE - Custom HTTP method",
+    "method": "PURGE",
+    "protocol": "http",
+    "url": "{{HTTPBIN_URL}}/anything",
+    "queryParams": [],
+    "headerParams": [
+      {
+        "id": "flow-purge-content-type",
+        "key": "Content-Type",
+        "value": "application/json",
+        "enabled": true
+      }
+    ],
+    "auth": {
+      "type": "none"
+    },
+    "body": "{\"resource\":\"flow-runner\",\"method\":\"PURGE\"}",
+    "preRequestScript": "",
+    "testScript": "",
+    "postRequestScript": ""
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "version": "1.0",
+  "savedAt": "2026-10-14T01:53:53.933Z",
+  "name": "SSE - First event",
+  "request": {
+    "name": "SSE - First event",
+    "method": "GET",
+    "protocol": "eventstream",
+    "url": "{{SSE_URL}}",
+    "queryParams": [],
+    "headerParams": [],
+    "auth": {
+      "type": "none"
+    },
+    "body": "",
+    "preRequestScript": "",
+    "testScript": "",
+    "postRequestScript": ""
+  }
+}

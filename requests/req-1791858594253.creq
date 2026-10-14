@@ -1,0 +1,25 @@
+{
+  "version": "1.0",
+  "savedAt": "2026-10-14T01:53:53.933Z",
+  "name": "Countries GraphQL API (Geografia Global)",
+  "request": {
+    "name": "Countries GraphQL API (Geografia Global)",
+    "method": "GET",
+    "protocol": "graphql",
+    "protocolConfig": {
+      "query": "query {\n  country(code: \"BR\") {\n    name\n    native\n    capital\n    currency\n    languages {\n      name\n    }\n  }\n}",
+      "variables": "{\n  \n}",
+      "headers": "{\n  \"Content-Type\": \"application/json\"\n}"
+    },
+    "url": "https://countries.trevorblades.com/graphql",
+    "queryParams": [],
+    "headerParams": [],
+    "auth": {
+      "type": "none"
+    },
+    "body": "",
+    "preRequestScript": "",
+    "testScript": "",
+    "postRequestScript": ""
+  }
+}

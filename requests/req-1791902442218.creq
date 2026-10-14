@@ -1,0 +1,20 @@
+{
+  "version": "1.0",
+  "savedAt": "2026-10-14T01:53:53.934Z",
+  "name": "SErverSide Events Tester",
+  "request": {
+    "name": "SErverSide Events Tester",
+    "method": "GET",
+    "protocol": "eventstream",
+    "url": "https://sse.tools.typinks.com/api/story",
+    "queryParams": [],
+    "headerParams": [],
+    "auth": {
+      "type": "none"
+    },
+    "body": "",
+    "preRequestScript": "",
+    "testScript": "",
+    "postRequestScript": ""
+  }
+}

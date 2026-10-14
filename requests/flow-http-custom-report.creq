@@ -1,0 +1,27 @@
+{
+  "version": "1.0",
+  "savedAt": "2026-10-14T01:53:53.933Z",
+  "name": "REPORT - Custom HTTP method",
+  "request": {
+    "name": "REPORT - Custom HTTP method",
+    "method": "REPORT",
+    "protocol": "http",
+    "url": "{{HTTPBIN_URL}}/anything",
+    "queryParams": [],
+    "headerParams": [
+      {
+        "id": "flow-report-content-type",
+        "key": "Content-Type",
+        "value": "application/json",
+        "enabled": true
+      }
+    ],
+    "auth": {
+      "type": "none"
+    },
+    "body": "{\"resource\":\"flow-runner\",\"method\":\"REPORT\"}",
+    "preRequestScript": "",
+    "testScript": "",
+    "postRequestScript": ""
+  }
+}

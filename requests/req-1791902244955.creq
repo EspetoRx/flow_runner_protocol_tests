@@ -1,0 +1,24 @@
+{
+  "version": "1.0",
+  "savedAt": "2026-10-14T01:53:53.934Z",
+  "name": "Test Mosquito ORG",
+  "request": {
+    "name": "Test Mosquito ORG",
+    "method": "GET",
+    "protocol": "mqtt",
+    "protocolConfig": {
+      "topic": "Message",
+      "payload": "{\n  \"Message\": \"Hello MQTT via Carteiro!\"\n}"
+    },
+    "url": "wss://test.mosquitto.org:8081",
+    "queryParams": [],
+    "headerParams": [],
+    "auth": {
+      "type": "none"
+    },
+    "body": "",
+    "preRequestScript": "",
+    "testScript": "",
+    "postRequestScript": ""
+  }
+}

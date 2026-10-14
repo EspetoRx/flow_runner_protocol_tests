@@ -1,0 +1,24 @@
+{
+  "version": "1.0",
+  "savedAt": "2026-10-14T01:53:53.933Z",
+  "name": "Socket.IO - Event",
+  "request": {
+    "name": "Socket.IO - Event",
+    "method": "GET",
+    "protocol": "socketio",
+    "protocolConfig": {
+      "event": "new message",
+      "message": "{\"text\":\"carteiro-flow\"}"
+    },
+    "url": "{{SOCKETIO_URL}}",
+    "queryParams": [],
+    "headerParams": [],
+    "auth": {
+      "type": "none"
+    },
+    "body": "",
+    "preRequestScript": "",
+    "testScript": "",
+    "postRequestScript": ""
+  }
+}

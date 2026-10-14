@@ -1,0 +1,24 @@
+{
+  "version": "1.0",
+  "savedAt": "2026-10-14T01:53:53.933Z",
+  "name": "MQTT - Publish",
+  "request": {
+    "name": "MQTT - Publish",
+    "method": "GET",
+    "protocol": "mqtt",
+    "protocolConfig": {
+      "topic": "carteiro/flow-runner/test",
+      "payload": "{\"source\":\"carteiro-flow\",\"status\":\"online\"}"
+    },
+    "url": "{{MQTT_URL}}",
+    "queryParams": [],
+    "headerParams": [],
+    "auth": {
+      "type": "none"
+    },
+    "body": "",
+    "preRequestScript": "",
+    "testScript": "",
+    "postRequestScript": ""
+  }
+}

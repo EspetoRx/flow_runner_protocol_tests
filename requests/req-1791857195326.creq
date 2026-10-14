@@ -1,0 +1,20 @@
+{
+  "version": "1.0",
+  "savedAt": "2026-10-14T01:53:53.933Z",
+  "name": "Alternativa com Criptografia e Feed em Tempo Real (Binance)",
+  "request": {
+    "name": "Alternativa com Criptografia e Feed em Tempo Real (Binance)",
+    "method": "GET",
+    "protocol": "websocket",
+    "url": "wss://stream.binance.com:9443/ws/btcusdt@trade",
+    "queryParams": [],
+    "headerParams": [],
+    "auth": {
+      "type": "none"
+    },
+    "body": "",
+    "preRequestScript": "",
+    "testScript": "",
+    "postRequestScript": ""
+  }
+}

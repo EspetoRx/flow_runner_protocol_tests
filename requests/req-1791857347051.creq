@@ -1,0 +1,20 @@
+{
+  "version": "1.0",
+  "savedAt": "2026-10-14T01:53:53.933Z",
+  "name": "Gerador Público do PieSocket (Sem API Key)",
+  "request": {
+    "name": "Gerador Público do PieSocket (Sem API Key)",
+    "method": "GET",
+    "protocol": "websocket",
+    "url": "wss://echo.websocket.org",
+    "queryParams": [],
+    "headerParams": [],
+    "auth": {
+      "type": "none"
+    },
+    "body": "",
+    "preRequestScript": "",
+    "testScript": "",
+    "postRequestScript": ""
+  }
+}

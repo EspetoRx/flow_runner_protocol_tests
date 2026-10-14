@@ -1,0 +1,20 @@
+{
+  "version": "1.0",
+  "savedAt": "2026-10-14T01:53:53.934Z",
+  "name": "Postman gRPC Bin / Echo Service",
+  "request": {
+    "name": "Postman gRPC Bin / Echo Service",
+    "method": "GET",
+    "protocol": "grpc",
+    "url": "grpc.postman-echo.com:443",
+    "queryParams": [],
+    "headerParams": [],
+    "auth": {
+      "type": "none"
+    },
+    "body": "",
+    "preRequestScript": "",
+    "testScript": "",
+    "postRequestScript": ""
+  }
+}

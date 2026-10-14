@@ -1,0 +1,75 @@
+{
+  "id": "flow-example-1791852997188-9xfkki",
+  "name": "Flow - HTTP custom methods (Example)",
+  "globalDelayMs": 250,
+  "steps": [
+    {
+      "id": "flow-http-report-step",
+      "requestId": "flow-http-custom-report",
+      "delayMs": 0,
+      "repeat": 1,
+      "preRequestScript": "env.set('flowStartedAt', Date.now());",
+      "testScript": "test('custom REPORT method succeeds', () => {\n  expect(response.status).toBe(200);\n  expect(response.json().method).toBe('REPORT');\n});",
+      "postRequestScript": "assert(response.status === 200, 'REPORT returned HTTP 200');"
+    },
+    {
+      "id": "flow-http-purge-step",
+      "requestId": "flow-http-custom-purge",
+      "delayMs": 100,
+      "repeat": 1,
+      "preRequestScript": "",
+      "testScript": "test('custom PURGE method succeeds', () => {\n  expect(response.status).toBe(200);\n  expect(response.json().method).toBe('PURGE');\n  expect(ct.env.get('flowStartedAt')).toBeDefined();\n});",
+      "postRequestScript": ""
+    }
+  ],
+  "createdAt": 1770000000000,
+  "updatedAt": 1791852997188,
+  "lastRun": {
+    "flowId": "flow-example-1791852997188-9xfkki",
+    "runId": "flow-run-1791852999383-9jmjas",
+    "status": "completed",
+    "results": [
+      {
+        "stepId": "flow-http-report-step",
+        "requestId": "flow-http-custom-report",
+        "error": "Pre-request script failed: Can't find variable: env",
+        "durationMs": 0
+      },
+      {
+        "stepId": "flow-http-purge-step",
+        "requestId": "flow-http-custom-purge",
+        "response": {
+          "status": 405,
+          "statusText": "Method Not Allowed",
+          "elapsedMs": 664,
+          "headers": {
+            "content-length": "178",
+            "content-type": "text/html",
+            "server": "gunicorn/19.9.0",
+            "connection": "keep-alive",
+            "access-control-allow-origin": "*",
+            "date": "Tue, 13 Oct 2026 00:56:40 GMT",
+            "allow": "DELETE, PATCH, GET, POST, HEAD, OPTIONS, PUT, TRACE",
+            "access-control-allow-credentials": "true"
+          },
+          "setCookies": [],
+          "body": "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 3.2 Final//EN\">\n<title>405 Method Not Allowed</title>\n<h1>Method Not Allowed</h1>\n<p>The method is not allowed for the requested URL.</p>\n",
+          "bodyBase64": null,
+          "isBinary": false,
+          "bodySize": 178
+        },
+        "testResult": {
+          "assertions": [
+            {
+              "name": "custom PURGE method succeeds",
+              "passed": false,
+              "message": "Expected 405 to be 200"
+            }
+          ],
+          "durationMs": 0
+        },
+        "durationMs": 791
+      }
+    ]
+  }
+}

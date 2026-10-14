@@ -1,0 +1,25 @@
+{
+  "version": "1.0",
+  "savedAt": "2026-10-14T01:53:53.933Z",
+  "name": "gRPC - Health Check",
+  "request": {
+    "name": "gRPC - Health Check",
+    "method": "POST",
+    "protocol": "grpc",
+    "protocolConfig": {
+      "serviceMethod": "grpc.health.v1.Health/Check",
+      "protoDefinition": "syntax = \"proto3\";\n\npackage grpc.health.v1;\n\nmessage HealthCheckRequest {\n  string service = 1;\n}\n\nmessage HealthCheckResponse {\n  enum ServingStatus {\n    UNKNOWN = 0;\n    SERVING = 1;\n    NOT_SERVING = 2;\n  }\n  ServingStatus status = 1;\n}\n\nservice Health {\n  rpc Check(HealthCheckRequest) returns (HealthCheckResponse);\n}",
+      "requestMessage": "{\n  \"service\": \"\"\n}"
+    },
+    "url": "{{GRPC_URL}}",
+    "queryParams": [],
+    "headerParams": [],
+    "auth": {
+      "type": "none"
+    },
+    "body": "",
+    "preRequestScript": "",
+    "testScript": "",
+    "postRequestScript": ""
+  }
+}
